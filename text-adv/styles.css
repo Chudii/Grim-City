@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@600&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Trirong', serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(21, 26, 75);
+}
+
+.container {
+    position: fixed;
+    bottom: 10vh;
+    height: fit-content;
+    width: 50vw;
+    height: 30vh;
+    max-height: 40vh;
+    max-width: 80%;
+    background-color: rgb(206, 192, 185);
+    padding: 25px 10px 10px 10px;
+    border: 10px solid rgb(156, 103, 54);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.text-container {
+    height: 100%;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.btn-grid {
+    bottom: 14vh;
+    left: 27vw;
+    width: 46vw;
+    position: fixed;
+    display: grid;
+    justify-self: flex-end;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.75vh 2vw;
+    margin-top: 20px;
+    justify-self: start;
+}
+
+.btn {
+    background-color: rgb(180, 205, 241);
+    border: 1px solid rgb(140, 159, 185);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+    opacity: 1;
+    transition: opacity 0.5s; 
+}
+
+.btn:hover {
+    border-color: white;
+}
